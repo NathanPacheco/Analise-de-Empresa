@@ -15,9 +15,9 @@ Qual o ticket médio mensal (faturamento médio mensal) dos contratos?
 import pandas as pd
 
 #   ENTRADA DAS BASES DE DADOS
-servicos_prestados = pd.read_excel(r'D:/nathan/Curso Python/Arquivos_Treino/BaseServiçosPrestados_MiniProjeto.xlsx')
-cadastro_clientes = pd.read_csv(r'D:/nathan/Curso Python/Arquivos_Treino/CadastroClientes_MiniProjeto.csv', sep=';', decimal=',')
-cadastro_funcionarios = pd.read_csv(r'D:/nathan/Curso Python/Arquivos_Treino/CadastroFuncionarios_MiniProjeto.csv', sep=';', decimal=',')
+servicos_prestados = pd.read_excel('BaseServiçosPrestados_MiniProjeto.xlsx')
+cadastro_clientes = pd.read_csv('CadastroClientes_MiniProjeto.csv', sep=';', decimal=',')
+cadastro_funcionarios = pd.read_csv('CadastroFuncionarios_MiniProjeto.csv', sep=';', decimal=',')
 
 #   1- VALOR TOTAL DA FOLHA SALARIAL
 total_SalarioBase = cadastro_funcionarios['Salario Base'].sum()
